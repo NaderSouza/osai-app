@@ -1,0 +1,438 @@
+
+/*PALETA-DE-CORES 
+#137DC5
+#111111
+#FFFFFF
+#2199EA
+#0F5F96
+#2A2A2A
+
+BONUS - #161616  #00abf0  #142352;
+*/
+
+/* FULLPAGE */
+
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	font-family: 'Bebas Neue', sans-serif;
+  }
+
+  body,html {
+	background-color: #161616;
+	/* background-color: #FFFFFF; */
+	color: #FFFFFF;
+	font-family: 'Bebas Neue', sans-serif;
+	margin: 0;
+	padding: 0;
+	
+
+  }
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+  /* NAVBAR */
+
+  .header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 10%;
+
+	background-color:#2A2A2A ;
+	/* background-color:transparent; */
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+  }
+
+  .logo  {
+	font-size: 30px;
+	color: #ededed;
+	text-decoration: none;
+	font-weight: 200;
+	transition: .5s;
+  }
+  .logo a:hover,
+  .logo a.active{
+	color: #0F5F96;
+  }
+
+  .navbar a {
+	font-size: 25px;
+	color: #ededed;
+	text-decoration: none;
+	font-weight: 150;
+	margin-left: 40px;
+	transition: .5s;
+  }
+  .navbar a:hover,
+  .navbar a.active{
+	color: #0F5F96;
+  }
+
+
+  /* ---------------------------------------------------------------------------------------------------------------------------- */
+  		/* ARRUMAR A GAMBIARRA */
+
+		  .img-logo-a{
+			width: 20%;
+			/* max-width: 0%; */
+		
+			height: 20%;
+			/* max-height: 20%; */
+		
+			/* margin-left: 200px; */
+		  }
+		
+		  .logo-button{
+			width: 50%;
+			/* max-width: 0%; */
+		
+			height: 50%;
+		
+		  }
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+  /* HOMEPAGE */
+
+  .home {
+	height: 100vh;
+	
+	/* background: url('../img/osai-logo-heart-vazio.png') no-repeat; */
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	padding: 0 10%;
+	display: flex;
+
+	width:100%;
+	
+	
+	/* justify-content: space-between; */
+	/* padding: 50px 5% 0px 5%; */
+    /* position: relative; */
+
+
+  }
+
+  .img-logo{
+	width: auto;
+	max-width: 50%;
+
+	height: auto;
+	max-height: 50%;
+
+	margin-left: 150px;
+  }
+
+
+  .home-text {
+	max-width: 700px;
+
+  }
+
+  .home-text h1 {
+	font-size: 56px;
+	font-weight: 700;
+	line-height: 1.2;
+
+	color: #00abf0;
+  }
+  .home-text h2 {
+	font-size: 32px;
+	font-weight: 700;
+
+	color:  #0F5F96;
+  }
+
+  .home-text p {
+	font-size: 16px;
+	margin: 20px 0 40px; 
+	/* font-weight: 700; */
+	/* color:  #0F5F96; */
+
+  }
+
+
+  /* ---------------------------------------------------------------------------------------------------------------------------- */
+		/* SOBRE NOS */
+
+		.sobre-nos{
+			
+			height: 100%;
+
+		
+		}
+
+		
+
+
+		.sobre-nos-text {
+			/* position: absolute; */
+			top: 50%;
+			left: 50%;
+			/* transform: translate(-50%, -50%); */
+			margin: 0 auto;
+			z-index: 5;
+			width: 45%;
+			padding: 40px 0;
+			text-align: center;
+			border-top-left-radius: 70px;
+			border-top-right-radius: 70px;
+			/* border-radius: 50px; */
+
+			/* background-color: #0F5F96; */
+			color: #FFFFFF;
+			font-weight: bold;
+			border: 10px inset #FFFFFF;
+		
+		  }
+		
+		  .sobre-nos-text h1 {
+			font-size: 56px;
+			font-weight: 700;
+			line-height: 1.2;
+		
+			color: #00abf0;
+		  }
+		  .sobre-nos-text h2 {
+			font-size: 32px;
+			font-weight: 700;
+		
+			color:  #0F5F96;
+		  }
+		
+		  .sobre-nos-text p {
+			font-size: 16px;
+			margin: 20px 0 40px; 
+			/* font-weight: 700; */
+			/* color:  #0F5F96; */
+		
+		  }
+		
+
+		  .sobre-nos-img{
+			background-image: url('../img/osai-banner-black-.png') ;
+			height: 100%;
+			width: 100%;
+			-webkit-background-size:cover ;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			opacity: 20%;
+
+			/* Add the blur effect */
+			filter: blur(8px);
+			-webkit-filter: blur(3px);
+		
+	
+			
+		}
+  
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+  /* BUTTONS */
+
+ .home-text .btn-box {
+	display: flex;
+	justify-content: space-between;
+	width: 345px;
+	height: 50px;
+	background: transparent;
+ }
+
+
+.btn-box  a {
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 150px;
+	height: 100%;
+
+	background-color:#00abf0 ;
+	border: 2.5px solid #00abf0;
+	border-radius: 8px;
+	font-size: 19px;
+	color: #161616;
+
+	text-decoration: none;
+	font-weight: 200;
+	letter-spacing: 1px;
+	z-index: 1;
+	overflow: hidden;
+
+	transition: .5s;
+}
+
+  .btn-box  a:hover{
+	color: #00abf0;
+  }
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* ALTERAR COR ESTÁTICA DOS BOTOES */
+
+  .btn-box a:nth-child() {
+	background: transparent;
+	color: #00abf0;
+  }
+
+  .btn-box a:nth-child(0):hover {
+	color: #161616;
+  }
+
+  .btn-box a:nth-child(0)::before {
+	background: #00abf0;
+	
+  }
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+  .btn-box a::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+
+	background: #161616;
+	/* background:  #142352; */
+	/* background:  #1b789c; */
+
+	z-index: -1;
+	transition: .5s;
+  }
+
+  .btn-box a:hover::before {
+	width: 100%;
+  }
+
+  .social{
+	position: absolute;
+	bottom: 40px;
+	width: 170px;
+	background: red;
+  }
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* CARDS DO SOBRE NOS */
+
+#skills{
+    width: 100%;
+    height: 100vh;
+    background-color:  #272727;
+	/* background-image: url(../img/osai-banner-black-.png); */
+	background-repeat: no-repeat;
+	background-size: auto	;
+
+    font-family: 'Oswald', sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top:40px;
+}
+
+.s-heading h1{
+	color:#FFFFFF;
+	font-size: 3rem;
+	margin: 0px;
+	padding: 0px;
+	
+}
+.s-heading p{
+	color :#272727;; 
+    color: #00abf0;
+	font-size: 2rem;
+	margin: 0px;
+	padding: 0px; 
+}
+.s-heading{
+	text-align: center;
+	margin: 20px 0px;
+}
+.s-box{
+	background-color: #2B2B2B;
+	width:350px;
+	height: 500px;
+	margin: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+	position: relative;
+}
+.b-container{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+ 
+	
+}
+.s-b-img{
+	width: 100%;
+	height: 70%;
+	
+}
+.s-b-img img{
+	width:100%;
+	height: 100%;
+	
+}
+.s-b-text{
+	width: 100%;
+	height: 30%;
+	background-color:#1E1E1E;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.s-b-text a{
+	margin: 0px;
+	color:#FFFFFF;
+	font-size: 1.1rem;
+	font-family: 'Oswald', sans-serif;
+	display: block;
+    display: -webkit-box;
+	max-width: 80%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.s-b-text a:hover{
+	color:rgba(255,255,255,0.50)
+}
+.s-type{
+	font-family: 'Oswald', sans-serif;
+	color:#FFFFFF;
+	background-color: #272727;
+	padding: 10px 15px;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 18px;
+	border-radius: 0px 0px 10px 10px;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+.s-box:hover{
+	transform:translateY(-20px);
+	transition: all ease 0.3s;
+	
+}
+
+
+
+
+
+
+
+
+
