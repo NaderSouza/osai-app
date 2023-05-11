@@ -248,7 +248,7 @@ html {
 }
 
 .img-fundo {
-	
+
   background-image: url("../img/osai-banner-black-.png");
   background-repeat: no-repeat;
 
@@ -433,6 +433,10 @@ html {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-decoration: none;
+
+  
+  transition: 0.3s;
 }
 .s-b-text a:hover {
   color: rgba(255, 255, 255, 0.5);
