@@ -387,7 +387,8 @@ html {
 }
 .s-heading {
   text-align: center;
-  margin: 20px 0px;
+
+  margin: 80px 0px;
 }
 .s-box {
   background-color: #2b2b2b;
@@ -455,6 +456,6 @@ html {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
 .s-box:hover {
-  transform: translateY(-20px);
+  transform: translateY(-40px);
   transition: all ease 0.5s;
 }
