@@ -459,3 +459,26 @@ html {
   transform: translateY(-40px);
   transition: all ease 0.5s;
 }
+
+
+
+.footer{
+
+  height: 12.5%;
+  width: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  background-color: #1e1e1e;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+
+}
+
+
+
+
