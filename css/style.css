@@ -464,7 +464,7 @@ html {
 
 .footer{
 
-  height: 12.5%;
+  /* height: 12.5%;
   width: 100%;
   -webkit-background-size: cover;
   background-size: cover;
@@ -475,9 +475,70 @@ html {
   padding: 20px;
   text-align: center;
   font-size: 14px;
-  color: #999;
+  color: #999; */
 
+  background-color: #1e1e1e;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
 }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #666;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #333;
+}
+  
+
 
 
 
