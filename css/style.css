@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 /*PALETA-DE-CORES 
 #137DC5
 #111111
@@ -10,7 +12,6 @@ BONUS - #161616  #00abf0  #142352;
 */
 
 /* FULLPAGE */
-
 * {
   margin: 0;
   padding: 0;
@@ -21,449 +22,301 @@ BONUS - #161616  #00abf0  #142352;
 body,
 html {
   background-color: #161616;
-  /* background-color: #FFFFFF; */
   color: #ffffff;
-  /* color: #161616; */
   font-family: "Bebas Neue", sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------------------- */
-/* NAVBAR */
-
-.header {
-  /* position: fixed; */
-  top: 0;
-  left: 0;
+/* HEADER */
+header {
   width: 100%;
-  /* height: 20%; */
-
-  padding: 0.5px 5%;
-  /* background-image: linear-gradient(to left, #33388e, #00abf0, #FFFFFF , #FFFFFF); */
-
+  padding: 6px 0;
   background-color: #161616;
-  /* background-color: #FFFFFF; */
-  /* background-color: #00abf0; */
-  /* background-color:transparent; */
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* z-index: 100; */
+  padding: 30px 30px;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------------------- */
-/* LINHA DEGRADE */
-
-.linha-degrade {
-  /* position: fixed; */
-  top: 0;
-  left: 0;
+header .container {
+  max-width: 1200px;
   width: 100%;
-
-  background-image: linear-gradient(to RIGHT, #33388e, #00abf0);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.linha-degrade-text {
-  text-decoration: none;
+header .container .img-logo-a {
+  max-width: 150px;
+  width: 100%;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------------------- */
-/* LOGO */
+/* NAVIGATION */
+header .container nav ul {
+  list-style: none;
+}
 
-.logo {
-  font-size: 30px;
+header .container nav ul li {
+  display: inline;
+}
+
+header .container nav a {
+  font-size: 20px;
   color: #ededed;
-  /* color: #161616; */
   text-decoration: none;
-  font-weight: 200;
-  transition: 0.5s;
-}
-.logo a:hover,
-.logo a.active {
-  color: #0f5f96;
-}
-
-.navbar a {
-  font-size: 25px;
-  color: #ededed;
-  /* color: #161616; */
-  text-decoration: none;
-  font-weight: 150;
   margin-left: 40px;
   transition: 0.5s;
 }
-.navbar a:hover,
-.navbar a.active {
+
+header .container nav a:hover,
+header .container nav a.active {
   color: #0f5f96;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------------------- */
-/* ARRUMAR A GAMBIARRA */
-
-.img-logo-a {
-  width: 12%;
-
-  /* height: 15%; */
-  /* align-items: left; */
-  /* max-width: 0%; */
-
-  /* max-height: 20%; */
-
-  /* margin-left: 200px; */
+/* LINHA DEGRADE */
+.linha-degrade {
+  width: 100%;
+  height: 15px;
+  background-image: linear-gradient(to RIGHT, #33388e, #00abf0);
 }
 
-/* .logo-button{
-			width: 20%;
-			
-		
-			height: 20%;
-		
-		  } */
-
-/* ---------------------------------------------------------------------------------------------------------------------------- */
 /* HOMEPAGE */
-
 .home {
-  height: 100vh;
-
-  /* background: url('../img/osai-logo-heart-vazio.png') no-repeat; */
-  background-size: cover;
-  background-position: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  padding: 0 10%;
-  display: flex;
-
-  width: 100%;
-
-  /* justify-content: space-between; */
-  /* padding: 50px 5% 0px 5%; */
-  /* position: relative; */
+  justify-content: center;
+  gap: 200px;
+  padding: 50px 0;
 }
 
-.img-logo {
-  width: auto;
-  max-width: 50%;
-
-  height: auto;
-  max-height: 50%;
-
-  margin-left: 150px;
+.home .content {
+  flex: 1;
 }
 
-.home-text {
-  max-width: 700px;
-  margin-bottom: 200px;
-}
-
-.home-text h1 {
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.2;
-
+.home .content h1 {
+  font-size: 50px;
+  font-weight: 400;
   color: #00abf0;
 }
-.home-text h2 {
-  font-size: 32px;
-  font-weight: 700;
 
+.home .content h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
   color: #0f5f96;
 }
 
-.home-text p {
-  font-size: 16px;
-  margin: 20px 0 40px;
-  /* font-weight: 700; */
-  /* color:  #0F5F96; */
+.home .content p {
+  font-size: 15px;
+  margin-top: 25px;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Open Sans', sans-serif;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------------------- */
-/* SOBRE NOS */
-
-.sobre-nos {
-  /* background-image: url('../img/osai-banner-black-.png') ; */
-  height: 100%;
-  width: 100%;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-
-  /* opacity: 20%; */
-
-  /* Add the blur effect */
-  /* filter: blur(8px);
-			-webkit-filter: blur(3px); */
+.home img {
+  flex: 1;
+  max-width: 450px;
 }
 
-.sobre-nos-text {
-  /* position: absolute; */
-  top: 50%;
-  left: 50%;
-  /* transform: translate(-50%, -50%); */
-  margin: 0 auto;
-  z-index: 5;
-  width: 45%;
-  padding: 40px 0;
-  text-align: center;
-  border-top-left-radius: 70px;
-  border-top-right-radius: 70px;
-  /* border-radius: 50px; */
-
-  /* background-color: #0F5F96; */
-
-  color: #ffffff;
-  /* font-weight: bold;
-			border: 10px inset #FFFFFF; */
-}
-
-.sobre-nos-text h1 {
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.2;
-
-  color: #00abf0;
-}
-.sobre-nos-text h2 {
-  font-size: 32px;
-  font-weight: 700;
-
-  color: #0f5f96;
-}
-
-.sobre-nos-text p {
-  font-size: 16px;
-  margin: 20px 0 40px;
-  /* font-weight: 700; */
-  /* color:  #0F5F96; */
-}
-
-.sobre-nos-img {
-  height: 100%;
-  width: 100%;
-
-  position: relative;
-}
-
-.img-fundo {
-
-  background-image: url("../img/osai-banner-black-.png");
-  background-repeat: no-repeat;
-
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-
-  height: 100%;
-  width: 100%;
-
-  position: absolute;
-  top: 0;
-  background-color: transparent;
-
-  opacity: 20%;
-
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(3px);
-}
-
-/* ---------------------------------------------------------------------------------------------------------------------------- */
-/* BUTTONS */
-
-.home-text .btn-box {
+/* BUTTON BOX */
+.home .content .btn-box {
+  margin-top: 25px;
   display: flex;
-  justify-content: space-between;
-  width: 345px;
-  height: 50px;
+  gap: 25px;
+  height: 45px;
   background: transparent;
 }
 
-.btn-box a {
+.home .content .btn-box a {
+  max-width: 150px;
+  width: 100%;
+  height: 100%;
   position: relative;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
-  width: 150px;
-  height: 100%;
-
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
   background-color: #00abf0;
   border: 2.5px solid #00abf0;
   border-radius: 8px;
-  font-size: 19px;
-  color: #161616;
-  /* color: #FFFFFF; */
-
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
-  font-weight: 200;
   letter-spacing: 1px;
   z-index: 1;
   overflow: hidden;
-
   transition: 0.5s;
 }
 
-.btn-box a:hover {
-  color: #00abf0;
-}
-/* ---------------------------------------------------------------------------------------------------------------------------- */
-/* ALTERAR COR ESTÁTICA DOS BOTOES */
-
-.btn-box a:nth-child() {
-  background: transparent;
+.home .content .btn-box a:hover {
   color: #00abf0;
 }
 
-.btn-box a:nth-child(0):hover {
-  color: #161616;
-  /* color: #FFFFFF; */
+.home .content .btn-box a:hover::before {
+  width: 100%;
 }
 
-.btn-box a:nth-child(0)::before {
-  background: #00abf0;
-}
-/* ---------------------------------------------------------------------------------------------------------------------------- */
-
-.btn-box a::before {
+.home .content .btn-box a::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 0;
   height: 100%;
-
   background: #161616;
-  /* background: #FFFFFF; */
-
-  /* background:  #142352; */
-  /* background:  #1b789c; */
-
   z-index: -1;
   transition: 0.5s;
 }
 
-.btn-box a:hover::before {
+/* DIVISION LINE */
+.division-line {
+  max-width: 300px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
+  margin: 60px auto;
+  border-radius: 5px;
 }
 
-.social {
-  position: absolute;
-  bottom: 40px;
-  width: 170px;
-  background: red;
-}
-
-/* ---------------------------------------------------------------------------------------------------------------------------- */
-/* CARDS DO SOBRE NOS */
-
+/* SOBRE NOS */
 #skills {
+  position: relative;
   width: 100%;
-  height: 100vh;
-  background-color: #161616;
+  margin: 0 auto;
+  background-image: linear-gradient(#161616, #1e1d1d, #262525, #2a2a2a);
   font-family: "Oswald", sans-serif;
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+
+/* SOBRE NOS - HEADER */
+#skills .header {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding-top: 40px;
+  align-items: center;
 }
 
-.s-heading h1 {
+#skills .header h1 {
   color: #ffffff;
-  font-size: 3rem;
-  margin: 0px;
-  padding: 0px;
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
 }
-.s-heading p {
-  color: #272727;
-  color: #00abf0;
-  font-size: 2rem;
-  margin: 0px;
-  padding: 0px;
-}
-.s-heading {
-  text-align: center;
 
-  margin: 80px 0px;
+#skills .header p {
+  color: #00abf0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  font-weight: lighter;
+  margin-top: 10px;
 }
-.s-box {
-  background-color: #2b2b2b;
-  width: 350px;
-  height: 500px;
-  margin: 20px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
-.b-container {
+
+/* ROW */
+#skills .row {
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 1200px;
+  width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-content: center;
+  gap: 30px;
 }
-.s-b-img {
-  width: 100%;
-  height: 70%;
-}
-.s-b-img img {
-  width: 100%;
-  height: 100%;
-}
-.s-b-text {
-  width: 100%;
-  height: 30%;
-  background-color: #1e1e1e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.s-b-text a {
-  margin: 0px;
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-family: "Oswald", sans-serif;
-  display: block;
-  display: -webkit-box;
-  max-width: 80%;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
+
+/* ROW - CARD */
+#skills .row .card {
+  background-color: rgba(0, 0, 0, 0.1);
+  flex: 1;
+  height: 430px;
+  padding: 40px 30px;
+  border-radius: 5px;
   overflow: hidden;
-  text-overflow: ellipsis;
-  text-decoration: none;
-
-  
-  transition: 0.3s;
-}
-.s-b-text a:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-.s-type {
-  font-family: "Oswald", sans-serif;
-  color: #ffffff;
-  background-color: #272727;
-  padding: 10px 15px;
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 18px;
-  border-radius: 0px 0px 10px 10px;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-}
-.s-box:hover {
-  transform: translateY(-40px);
-  transition: all ease 0.5s;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all .2s ease;
 }
 
+#skills .row .card img {
+  width: 100%;
+  height: 200px;
+  max-width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  transition: all .2s ease;
+}
 
+#skills .row .card:hover img {
+  max-width: 170px;
+  height: 140px;
+  transition: all .2s ease;
+}
 
-.footer{
+#skills .row .card .text {
+  text-align: left;
+  margin-top: 70px;
+  font-family: 'Open Sans', sans-serif;
+  transition: all .2s ease;
+}
 
+#skills .row .card:hover .text {
+  margin-top: 20px;
+  transition: all .2s ease;
+}
+
+#skills .row .card .text .head {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+#skills .row .card .text .head h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#skills .row .card .text .head .line {
+  background-color: #00abf0;
+  width: 1px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+#skills .row .card .text i {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#skills .row .card .text p {
+  border-top: 1px solid #00abf0;
+  margin-top: 55px;
+  padding-top: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  transition: all .2s ease;
+}
+
+#skills .row .card:hover .text p {
+  margin-top: 25px;
+  padding-top: 20px;
+  transition: all .2s ease;
+}
+
+/* FOOTER */
+.footer {
   /* height: 12.5%;
   width: 100%;
   -webkit-background-size: cover;
@@ -537,9 +390,3 @@ h3 {
 .social-icons a:hover {
   background-color: #333;
 }
-  
-
-
-
-
-
