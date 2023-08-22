@@ -141,7 +141,7 @@ form{
 	background: none;
 	padding: 0.5rem 0.7rem;
 	font-size: 1.2rem;
-	color: #555;
+	color: #fff;
 	font-family: 'poppins', sans-serif;
 }
 
@@ -175,7 +175,7 @@ a:hover{
 	background-image: linear-gradient(to right, #3a7ace, #3a7ace, #3a7ace);
 	background-size: 200%;
 	font-size: 1.2rem;
-	color: #fff;
+	color: #d9d9d9;
 	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	margin: 1rem 0;
