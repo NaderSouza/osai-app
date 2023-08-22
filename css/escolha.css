@@ -7,6 +7,8 @@
 body{
     font-family: 'Poppins', sans-serif;
 	overflow: hidden;
+	background-color: #2a2a2a;
+	color: #2a2a2a;
 	
 }
 
@@ -25,6 +27,7 @@ body{
     grid-template-columns: repeat(2, 1fr);
     grid-gap :7rem;
     padding: 0 2rem;
+	color: #2a2a2a;
 }
 
 .img{
@@ -54,7 +57,7 @@ form{
 
 .login-content h2{
 	margin: 15px 0;
-	color: #333;
+	color: #d9d9d9;
 	text-transform: uppercase;
 	font-size: 2.9rem;
 }
@@ -65,7 +68,7 @@ form{
     grid-template-columns: 7% 93%;
     margin: 25px 0;
     padding: 5px 0;
-    border-bottom: 2px solid #d9d9d9;
+    border-bottom: 2px solid #2a2a2a;
 }
 
 .login-content .input-div.one{
