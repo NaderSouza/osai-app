@@ -19,7 +19,7 @@ inputs.forEach(input => {
 	input.addEventListener("blur", remcl);
 });
 
-$('#formP').addEventListener('submit', onSubmit)
+$('#formLogin').addEventListener('submit', onSubmit)
 
 function onSubmit(e) {
 	e.preventDefault()
