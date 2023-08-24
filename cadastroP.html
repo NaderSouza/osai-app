@@ -16,7 +16,7 @@
 			<img src="img/bgc.svg">
 		</div>
 		<div class="login-content">
-			<form action="index.html">
+			<form id="formRegister">
 				<img src="img/avatar.svg">
 				<h2 class="title">Cadastro</h2>
 				<div class="input-div one">
@@ -25,7 +25,7 @@
 					</div>
 					<div class="div">
 						<h5>Nome</h5>
-						<input type="text" class="input">
+						<input type="text" class="input" id="name" required>
 
 					</div>
 				</div>
@@ -35,17 +35,17 @@
 					</div>
 					<div class="div">
 						<h5>Sobrenome</h5>
-						<input type="sobrenome" class="input">
+						<input type="sobrenome" class="input" id="surname" required>
 					</div>
 				</div>
-  
+
 				<div class="input-div box">
 					<div class="i">
 						<i class="fas fa-envelope"></i>
 					</div>
 					<div class="div">
 						<h5>Email</h5>
-						<input type="email" class="input">
+						<input type="email" class="input" id="email" required>
 					</div>
 				</div>
 
@@ -55,65 +55,54 @@
 					</div>
 					<div class="div">
 						<h5>Senha</h5>
-						<input type="senha" class="input">
+						<input type="password" class="input" id="password" required>
 					</div>
-                </div>
-                
+				</div>
+
 				<div class="input-div box">
 					<div class="i">
 						<i class="fas fa-city"></i>
 					</div>
 					<div class="div">
 						<h5>Estado/Cidade</h5>
-						<input type="cidade" class="input">
+						<input type="cidade" class="input" id="city" required>
 					</div>
-                </div>
-                
+				</div>
+
 				<div class="input-div box">
 					<div class="i">
 						<i class="fas fa-calendar-alt"></i>
 					</div>
 					<div class="div">
 						<h5>Data de nascimento</h5>
-						<input type="data-de-nascimento" class="input">
+						<input type="data-de-nascimento" class="input" id="date" required>
 					</div>
-                </div>
-                
+				</div>
+
 				<div class="input-div box">
 					<div class="i">
 						<i class="fas fa-mobile-alt"></i>
 					</div>
 					<div class="div">
 						<h5>Telefone</h5>
-						<input type="telefone" class="input">
-                    </div>
-                    
-                </div>
-                
-                <div class="input-div box">
+						<input type="telefone" class="input" id="phone" required>
+					</div>
+				</div>
+				<div class="input-div box">
 					<div class="i">
 						<i class="fas fa-id-card"></i>
 					</div>
 					<div class="div">
 						<h5>CPF</h5>
-						<input type="CPF" class="input">
-                    </div>
-                    
+						<input type="CPF" class="input" id="cpf" required>
+					</div>
 				</div>
-
-                <!-- <a href="#">Esqueceu a senha?</a> -->
-                <!-- <a class="thau" href="cadastroP.html">Cadastrar-se como profissional</a> -->
-                <a class="btn-meio a2" href="cadastroP2.html">Próximo</a>
-				<!-- <input type="submit" class="btn" value="->"> -->
-				<!-- <h5 class="mt-2">Não possui conta?</h5><a href="">Cadastrar-se</a> -->
-
-
-
-
+				<button type="submit" class="btn">Próximo</button>
 			</form>
 		</div>
 	</div>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
 </body>
 
 </html>
