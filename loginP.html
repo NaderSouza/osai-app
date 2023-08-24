@@ -16,7 +16,7 @@
 			<img src="img/bgpl.svg">
 		</div>
 		<div class="login-content">
-			<form action="index.html">
+			<form id="formP">
 				<img src="img/avatar.svg">
 				<h2 class="title">Login</h2>
 				<div class="input-div one">
@@ -25,8 +25,7 @@
 					</div>
 					<div class="div">
 						<h5>Usuário</h5>
-						<input type="text" class="input">
-
+						<input type="text" class="input" id="username" required>
 					</div>
 				</div>
 				<div class="input-div senha">
@@ -35,11 +34,11 @@
 					</div>
 					<div class="div">
 						<h5>Senha</h5>
-						<input type="senha" class="input">
+						<input type="password" id="password" class="input" required>
 					</div>
 				</div>
 				<a href="#">Esqueceu a senha?</a>
-				<input type="submit" class="btn" value="Logar">
+				<button type="submit" class="btn">Logar</button>
 				<a href="cadastroP.html">Cadastrar-se como profissional</a>
 				<!-- <a href="">Cadastrar-se como profissional</a> -->
 
