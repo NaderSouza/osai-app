@@ -161,7 +161,7 @@ header .container button::before {
 }
 
 .home .content h2 {
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
   font-family: 'Open Sans', sans-serif;
@@ -170,7 +170,7 @@ header .container button::before {
 }
 
 .home .content p {
-  font-size: 15px;
+  font-size: 18px;
   margin-top: 25px;
   color: rgba(255, 255, 255, 0.9);
   font-family: 'Open Sans', sans-serif;
