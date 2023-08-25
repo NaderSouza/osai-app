@@ -425,16 +425,70 @@ h3 {
 
 /* RESPONSIVE */
  
-@media (max-width: 1200px) {
-  html {
-  font-size: 55%;
+@media screen and (max-width: 768px) {
+  .home {
+    display: block;
+    background-image: none;
+  }
+  .img{
+    width: 50vw;
+    display: none;
+    
+  }
+
+  .footer{
+    margin: 2em 2em;
+  }
   
+  .content{
+    margin: 0;
+    text-align: center;
+  }
+  .card{
+    display: block;
   }
 }
 
-@media (max-width: 1000px) {
-  .header {
-  padding: 2rem 4%;
+/* Estilos para telas menores que 768px */
+@media (max-width: 767px) {
+  /* Ajuste o tamanho da fonte do título principal */
+  .home .content h1 {
+    font-size: 30px;
+  }
+
+  /* Reduza o espaçamento entre os botões */
+  .btn-box a {
+    margin-top: 10px;
+  }
+
+  /* Ajuste o tamanho da fonte do rodapé */
+  .footer {
+    font-size: 12px;
+  }
+}
+
+/* Estilos para telas menores que 992px */
+@media (max-width: 991px) {
+  /* Ajuste o tamanho da fonte do subtítulo */
+  .home .content h2 {
+    font-size: 16px;
+  }
+
+  /* Ajuste o espaçamento entre os itens do menu */
+  .nav-header a {
+    margin-left: 20px;
+  }
+
+  /* Ajuste a largura dos botões de login e cadastro */
+  .buttons-header button {
+    max-width: 120px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Ajuste a largura dos cards */
+  .card {
+    flex-basis: calc(50% - 20px);
   }
 }
 
