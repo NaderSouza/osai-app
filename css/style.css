@@ -423,3 +423,19 @@ h3 {
   color: #fff;
 }
 
+/* RESPONSIVE */
+ 
+@media (max-width: 1200px) {
+  html {
+  font-size: 55%;
+  
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+  padding: 2rem 4%;
+  }
+}
+
+
