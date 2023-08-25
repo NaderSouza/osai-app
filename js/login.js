@@ -4,7 +4,7 @@ function onSubmit(e) {
   e.preventDefault()
 
   const user = {
-    username: $('#username').value,
+    cpf: $('#cpf').value,
     password: $('#password').value
   }
 
