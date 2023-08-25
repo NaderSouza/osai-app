@@ -84,6 +84,16 @@ form {
 	transition: .3s;
 }
 
+.fa-eye{
+	position: absolute;
+	top: 13px;
+	right: 10px;
+	cursor: pointer;
+
+}
+
+
+
 .input-div>div {
 	position: relative;
 	height: 45px;
@@ -131,6 +141,8 @@ form {
 .input-div.focus>.i>i {
 	color: #3a7ace;
 }
+
+
 
 .input-div>div>input {
 	position: absolute;
