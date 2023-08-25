@@ -7,8 +7,8 @@
 body{
     font-family: 'Poppins', sans-serif;
 	overflow: hidden;
-	background-color: #2a2a2a;
-	color: #2a2a2a;
+	background-color: #161616;
+	color: #161616;
 }
 
 .wave{
@@ -105,7 +105,7 @@ form{
 	bottom: -2px;
 	width: 0%;
 	height: 2px;
-	background-color: #3a7ace;
+	background-color: #0F5F96;
 	transition: .4s;
 }
 
@@ -127,7 +127,7 @@ form{
 }
 
 .input-div.focus > .i > i{
-	color: #3a7ace;
+	color: #0F5F96;
 }
 
 .input-div > div > input{
@@ -172,7 +172,7 @@ h5{
 	
 }
 .thau:hover{
-    color: #3a7ace;
+    color: #0F5F96;
 }
 
 .btn-meio{
@@ -183,7 +183,7 @@ h5{
 	outline: none;
 	border: none;
 	padding-top: 10px;
-	background-image: linear-gradient(to right, #3a7ace, #3a7ace, #3a7ace);
+	background-image: linear-gradient(to right, #0F5F96, #0F5F96, #0F5F96);
 	background-size: 200%;
 	font-size: 1.2rem;
 	color: #fff;

@@ -7,8 +7,8 @@
 body{
     font-family: 'Poppins', sans-serif;
 	overflow: hidden;
-	background-color: #2a2a2a;
-	color: #2a2a2a;
+	background-color: #161616;
+	color: #161616;
 }
 
 .wave{
@@ -94,7 +94,7 @@ form{
 	left: 10px;
 	top: 50%;
 	transform: translateY(-50%);
-	color: #999;
+	color: #d9d9d9;
 	font-size: 18px;
 	transition: .3s;
 }
@@ -105,7 +105,7 @@ form{
 	bottom: -2px;
 	width: 0%;
 	height: 2px;
-	background-color: #3a7ace;
+	background-color: #0F5F96;
 	transition: .4s;
 }
 
@@ -127,7 +127,7 @@ form{
 }
 
 .input-div.focus > .i > i{
-	color: #3a7ace;
+	color: #0F5F96;
 }
 
 .input-div > div > input{
@@ -141,7 +141,7 @@ form{
 	background: none;
 	padding: 0.5rem 0.7rem;
 	font-size: 1.2rem;
-	color: #fff;
+	color: #d9d9d9;
 	font-family: 'poppins', sans-serif;
 }
 
@@ -153,7 +153,7 @@ a{
 	display: block;
 	text-align: right;
 	text-decoration: none;
-	color: #999;
+	color: #d9d9d9;
 	font-size: 0.9rem;
 	transition: .3s;
 }
@@ -161,7 +161,7 @@ a{
 
 
 a:hover{
-	color: #3a7ace;
+	color: #0F5F96;
 }
 
 .btn{
@@ -172,7 +172,7 @@ a:hover{
 	outline: none;
 	border: none;
 	
-	background-image: linear-gradient(to right, #3a7ace, #3a7ace, #3a7ace);
+	background-image: linear-gradient(to right, #0F5F96, #0F5F96, #0F5F96);
 	background-size: 200%;
 	font-size: 1.2rem;
 	color: #d9d9d9;
