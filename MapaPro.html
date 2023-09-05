@@ -1,0 +1,132 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	</head>
+	<body style="margin:0px;"">
+
+		<form id="search" style="position:absolute; right:0px; top:0px; margin-left:-200px; width:200px; padding:5px; background:rgba(0,0,0,0.5); z-index:1000; text-align:center; border-radius:0px 0px 0px 4px;" onSubmit="javascript:return SubmitSearch();">
+			<input type="text" id="search-input" />
+			<button type="submit" id="search-button">Buscar</button>
+		</form>
+		<a href="#" id="add-ambulance" onClick="javascript:return AddAmbulance();" style="position:absolute; z-index:1000; bottom:30px; right:10px; display:none;">
+			<img src="/img/btn_add.png" style="width:50px;" />
+		</a>
+		<div id="map" style="width:100%; height:100%;"></div>
+		<script type="text/javascript">
+
+			const urlParams = new URLSearchParams(window.location.search);
+			var map = L.map('map').setView([-23.57258478690228, -46.70324007434706], 13);
+			var user = localStorage.getItem('user');
+			var baseUrl = window.location.origin;
+			var timeout = 2000;
+			var marker = null;
+			var ambulance = null;
+
+			L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(map);
+
+			function SubmitSearch ()
+			{
+				user = document.getElementById('search-input').value;
+
+				if (user == '' || user == undefined)
+					return false;
+
+				document.getElementById('search-input').value = '';
+
+				let xhr = new XMLHttpRequest();
+				xhr.open("GET", baseUrl + '/get-info?user=' + user);
+				xhr.send();
+				xhr.responseType = "json";
+				xhr.onload = () => {
+
+					if (xhr.readyState != 4 || xhr.status != 200)
+						return;
+
+					let response = xhr.response;
+
+					if (response.status == 'nok')
+					{
+						alert('não foi possível encontrar o usuário ' + user);
+						return false;
+					}
+
+					if (marker != null)
+						map.removeLayer(marker);
+
+					let position = response.position;
+
+					if (position.lat == undefined || position.lat == null || position.lng == undefined || position.lng == null)
+					{
+						alert('O usuário não possui solicitação de socorro');
+						return false;
+					}
+
+					let myIcon = L.icon({
+						iconUrl: '/img/pins/client.png',
+						iconSize: [30, 41.19],
+						iconAnchor: [15, 41,19],
+					});
+						
+					marker = L.marker([position.lat, position.lng], {icon:myIcon}).addTo(map);
+					marker.setLatLng([position.lat, position.lng]);
+					map.setView([position.lat, position.lng], 12);
+
+					document.getElementById('add-ambulance').style.display = 'block';
+					
+				};
+
+				return false;
+			}
+
+			function SetAmbulancePosition (lat, lng)
+			{
+				let xhr = new XMLHttpRequest();
+				xhr.open("GET", baseUrl + '/send-ambulance-info?user=' + user + '&lat=' + lat + '&lng=' + lng);
+				xhr.send();
+				xhr.responseType = "json";
+				xhr.onload = () => {};
+			}
+
+			function AddAmbulance ()
+			{
+// 				document.getElementById('map').style.cursor = 'crosshair';
+				map.on('click', function (event) {
+
+					let position = event.latlng;
+					map.off('click');
+					let myIcon = L.icon({
+						iconUrl: '/img/pins/ambulance.png',
+						iconSize: [30, 41.19],
+						iconAnchor: [15, 41,19],
+					});
+					ambulance = new L.marker(position, {draggable: true, icon:myIcon}).addTo(map);
+					ambulance.on("dragend", function(internalEvent) {
+
+						let internalPosition = internalEvent.target.getLatLng();
+						SetAmbulancePosition(internalPosition.lat, internalPosition.lng);
+					});
+					
+					SetAmbulancePosition(position.lat, position.lng);
+					
+//   marker.on('dragend', function(event){
+//     var marker = event.target;
+//     var position = marker.getLatLng();
+//     marker.setLatLng(new L.LatLng(position.lat, position.lng),{draggable:'true'});
+//     map.panTo(new L.LatLng(position.lat, position.lng))
+//   });
+//   map.addLayer(marker);
+
+				});
+
+				document.getElementById('add-ambulance').style.display = 'none';
+
+				// alert('adicionar ambulancia');
+				return false;
+			}
+
+		</script>
+
+	</body>
+</html>

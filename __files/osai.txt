@@ -1,0 +1,103 @@
+Nome da Empresa: O.S.A.I
+
+Descrição da Empresa: A O.S.A.I é uma plataforma inovadora que integra um aplicativo para usuários e um site para paramédicos, proporcionando um sistema eficiente de solicitação de ambulâncias e compartilhamento de informações médicas vitais em situações de emergência. Nossa missão é oferecer atendimento de emergência rápido, preciso e personalizado, garantindo a segurança e o cuidado dos pacientes enquanto facilitamos a comunicação entre pacientes, familiares e profissionais de saúde.
+
+Recursos do Aplicativo para Usuários:
+
+1. Registro Detalhado: Os usuários podem criar perfis detalhados, fornecendo informações médicas críticas, como tipo sanguíneo, histórico médico, alergias, medicações atuais e informações de convênio médico. Isso permite uma triagem mais eficaz pelos paramédicos.
+
+2. Solicitação de Ambulância: Em momentos de emergência, os usuários podem solicitar uma ambulância por meio do aplicativo. A localização exata é automaticamente compartilhada com os paramédicos para uma resposta rápida.
+
+3. Rastreamento em Tempo Real: Os usuários podem acompanhar a localização da ambulância em tempo real, garantindo transparência e estimativas precisas de chegada.
+
+4. Notificação a Contatos de Emergência: Durante a solicitação de ambulância, os usuários podem designar contatos de emergência para receber notificações, incluindo destino da ambulância e informações do hospital.
+
+5. Histórico Médico Centralizado: O aplicativo armazena um histórico detalhado de todas as solicitações anteriores, permitindo um atendimento mais informado em situações futuras.
+
+Recursos do Site para Paramédicos:
+
+1. Recebimento de Chamados: Paramédicos registrados recebem alertas em tempo real sobre solicitações de ambulância e podem aceitar ou recusar com base na disponibilidade.
+
+2. Acesso a Informações do Paciente: Os paramédicos têm acesso imediato às informações médicas compartilhadas pelos pacientes, incluindo histórico médico, alergias e medicações.
+
+3. Navegação Integrada: O site oferece navegação otimizada até o local do paciente, acelerando a resposta.
+
+4. Comunicação com Hospitais: Os paramédicos podem informar o hospital sobre o paciente a caminho, preparando a equipe médica para a chegada.
+
+Vantagens Competitivas:
+
+1. Atendimento Personalizado: Informações médicas detalhadas garantem atendimento personalizado e eficaz.
+
+2. Transparência e Comunicação: Rastreamento em tempo real e notificações para contatos de emergência melhoram a comunicação e a tranquilidade dos familiares.
+
+3. Eficiência na Resposta: A plataforma permite uma resposta mais rápida e uma navegação otimizada para os paramédicos.
+
+4. Histórico Centralizado: O histórico médico centralizado melhora a qualidade do atendimento e a tomada de decisões médicas.
+
+5. Evitar Trotes: Certamente, essa é uma vantagem significativa que pode ser incorporada ao sistema da O.S.A.I. Integrar o CPF do cliente ao histórico de solicitações de ambulância é uma abordagem inteligente para minimizar ou até mesmo eliminar trotes e solicitações falsas. Isso traz benefícios tanto para o sistema em si quanto para a sociedade como um todo, ao garantir que os recursos de emergência sejam direcionados apenas para situações reais de necessidade médica.
+
+Além disso, a conexão do CPF ao histórico também pode auxiliar na identificação rápida dos pacientes, facilitando a triagem médica e proporcionando uma visão mais completa do histórico médico do usuário em situações futuras. Isso não apenas melhora a qualidade do atendimento, mas também ajuda os profissionais de saúde a tomar decisões informadas.
+
+Portanto, incluir o CPF como parte do registro no sistema não só ajuda a prevenir trotes, mas também agrega valor ao atendimento médico de emergência, ao proporcionar informações precisas e relevantes para os paramédicos e profissionais de saúde envolvidos.
+
+A O.S.A.I busca transformar o atendimento de emergência, proporcionando cuidados abrangentes e ágeis, ao mesmo tempo em que fortalece a conexão entre pacientes e profissionais de saúde.
+
+
+
+
+DADOS CADASTRAIS
+
+1. IDENTIFICAÇÃO DO PACIENTE:
+ . Nome completo
+ . Data de nascimento
+ . Número de CPF
+ . Idioma falado pelo paciente
+ . Necessidades especiais ou limitações de mobilidade
+ . Status de gravidez (caso aplicavel)
+
+
+2. INFORMAÇÃO DE CONTATO:
+ . Número de telefone
+ . Contatos de emergência
+
+3. HISTÓRICO MÉDICO
+ . Alergias conhecidas
+ . Condições médicas pré-existentes
+  (diabetes, hipertensão, asma, etc.)
+ . Medicações em uso regular
+ . Cirurgias recentes ou relevantes
+ . Histórico de condições médicas crônicas
+ . Eventos anteriores que podem ter levado à emergência (lesões recentes, febres, etc.)
+
+
+TRIAGEM
+
+1. SINTOMAS ATUAIS:
+ . Descrição detalhada dos sintomas
+ . Intensidade da dor ou desconforto
+ . Duração dos sintomas
+
+2. CIRCUNSTÂNCIAS DA EMERGÊNCIA:
+ . Causa do incidente (acidente de trânsito, queda, etc.)
+ . Detalhes do local onde ocorreu a emergência
+
+3. CONSCIÊNCIA E ESTADO MENTAL:
+ . Consciência (alerta, sonolento, inconsciente)
+ . Resposta a estimulos (respostas verbais, movimentos, etc.)
+
+4. SINAIS VITAIS:
+ . Frequências cardíaca
+ . Frequência respiratória
+ . Pressão arterial
+ . Temperatura corporal
+
+5. GRAVIDE:
+ . Escala de dor (de 0 a 10)
+ . Exposição a substâncias tóxicas ou alérgicos
+
+
+
+
+
+
+

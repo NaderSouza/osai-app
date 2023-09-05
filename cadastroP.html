@@ -16,7 +16,7 @@
 			<img src="img/bgpl.svg">
 		</div>
 		<div class="login-content">
-			<form id="formRegister">
+			<form id="formRegister" action="/register-pro" method="get">
 				<img src="img/avatar.svg">
 				<h2 class="title">Cadastro</h2>
 				<div class="input-div one">
@@ -25,7 +25,7 @@
 					</div>
 					<div class="div">
 						<h5>Nome</h5>
-						<input type="text" class="input" id="name" required>
+						<input type="text" class="input" id="name" name="firstname" required>
 
 					</div>
 				</div>
@@ -35,7 +35,7 @@
 					</div>
 					<div class="div">
 						<h5>Sobrenome</h5>
-						<input type="sobrenome" class="input" id="surname" required>
+						<input type="text" class="input" id="surname" name="lastname" required>
 					</div>
 				</div>
 
@@ -45,7 +45,7 @@
 					</div>
 					<div class="div">
 						<h5>Email</h5>
-						<input type="email" class="input" id="email" required>
+						<input type="email" class="input" id="email" name="email" required>
 					</div>
 				</div>
 
@@ -55,7 +55,7 @@
 					</div>
 					<div class="div">
 						<h5>Senha</h5>
-						<input type="password" class="input" id="password" required>
+						<input type="password" class="input" id="password" name="password" required>
 					</div>
 				</div>
 
@@ -65,7 +65,7 @@
 					</div>
 					<div class="div">
 						<h5>Estado/Cidade</h5>
-						<input type="cidade" class="input" id="city" required>
+						<input type="text" class="input" id="city" name="location" required>
 					</div>
 				</div>
 
@@ -75,7 +75,7 @@
 					</div>
 					<div class="div">
 						<h5>Data de nascimento</h5>
-						<input type="data-de-nascimento" class="input" id="date" required>
+						<input type="date" class="input" id="date" name="birthdate" required>
 					</div>
 				</div>
 
@@ -85,7 +85,7 @@
 					</div>
 					<div class="div">
 						<h5>Telefone</h5>
-						<input type="telefone" class="input" id="phone" required>
+						<input type="text" class="input" id="phone" name="phone" required>
 					</div>
 				</div>
 				<div class="input-div box">
@@ -94,7 +94,7 @@
 					</div>
 					<div class="div">
 						<h5>CPF</h5>
-						<input type="CPF" class="input" id="cpf" required>
+						<input type="text" class="input" id="cpf" name="document" required>
 					</div>
 				</div>
 				<button type="submit" class="btn">Próximo</button>
@@ -102,7 +102,7 @@
 		</div>
 	</div>
 	<script src="js/main.js"></script>
-	<script type="text/javascript" src="js/register.js"></script>
+	<script type="text/javascript" src="js/registerPro.js"></script>
 </body>
 
 </html>
