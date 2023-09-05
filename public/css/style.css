@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/*PALETA-DE-CORES 
+#137DC5
+#111111
+#FFFFFF
+#2199EA
+#0F5F96
+#2A2A2A
+
+BONUS - #161616  #00abf0  #142352;
+*/
+
+/* FULLPAGE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+body,
+html {
+  background-color: #161616;
+  color: #ffffff;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  
+  background-color: #161616;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 200px;
+}
+
+header .container {
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .img-logo-a {
+  max-width: 150px;
+  width: 100%;
+}
+
+
+header .container .nav-header ul {
+  list-style: none;
+}
+
+header .container .nav-header ul li {
+  display: inline;
+}
+
+header .container .nav-header li a {
+  font-size: 20px;
+  color: #ededed;
+  text-decoration: none;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+
+header .container .nav-header a:hover,
+header .container .nav-header a.active {
+  color: #0f5f96;
+}
+
+header .container {
+
+  display: flex;
+  gap: 25px;
+  height: 45px;
+  background: transparent;  
+}
+
+.buttons-header{
+  display: flex;
+  gap: 10px ;
+}
+
+header .container button {
+  max-width: 150px;
+  padding: 15px;
+  
+
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: transparent;
+  border: 2.5px solid #00abf0;
+  border-radius: 8px;
+  color: #00abf0;
+  text-decoration: none;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.s;
+  cursor: pointer;
+}
+
+header .container button:hover {
+  color: #2a2a2a;
+}
+
+header .container button:hover::before {
+  width: 100%;
+}
+
+header .container button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00abf0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+/* LINHA DEGRADE */
+.linha-degrade {
+  width: 100%;
+  height: 15px;
+  background-image: linear-gradient(to RIGHT, #5434ce, #3d6eba, #00abf0);
+}
+
+/* HOMEPAGE */
+.home {
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  padding: 50px 200px;
+}
+
+.home .content {
+  flex: 1;
+}
+
+.home .content h1 {
+  font-size: 50px;
+  font-weight: 400;
+  color: #00abf0;
+}
+
+.home .content h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
+  color: #0f5f96;
+}
+
+.home .content p {
+  font-size: 18px;
+  margin-top: 25px;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.home img {
+  flex: 1;
+  max-width: 450px;
+}
+
+/* BUTTON BOX */
+.home .content .btn-box {
+  margin-top: 25px;
+  display: flex;
+  gap: 25px;
+  height: 45px;
+  background: transparent;
+}
+
+.home .content .btn-box a {
+  max-width: 150px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: #00abf0;
+  border: 2.5px solid #00abf0;
+  border-radius: 8px;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.home .content .btn-box a:hover {
+  color: #00abf0;
+}
+
+.home .content .btn-box a:hover::before {
+  width: 100%;
+}
+
+.home .content .btn-box a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #161616;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+/* DIVISION LINE */
+.division-line {
+  max-width: 300px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  margin: 60px auto;
+  border-radius: 5px;
+}
+
+/* SOBRE NOS */
+#skills {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background-image: linear-gradient(#161616, #1e1d1d, #262525, #2a2a2a);
+  font-family: "Oswald", sans-serif;
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+
+/* SOBRE NOS - HEADER */
+#skills .header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills .header h1 {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+
+#skills .header p {
+  color: #00abf0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  font-weight: lighter;
+  margin-top: 10px;
+}
+
+/* ROW */
+#skills .row {
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+}
+
+/* ROW - CARD */
+#skills .row .card {
+  background-color: rgba(0, 0, 0, 0.1);
+  flex: 1;
+  height: 430px;
+  padding: 40px 30px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all .2s ease;
+}
+
+#skills .row .card img {
+  width: 100%;
+  height: 200px;
+  max-width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  transition: all .2s ease;
+}
+
+#skills .row .card:hover img {
+  max-width: 170px;
+  height: 140px;
+  transition: all .2s ease;
+}
+
+#skills .row .card .text {
+  text-align: left;
+  margin-top: 70px;
+  font-family: 'Open Sans', sans-serif;
+  transition: all .2s ease;
+}
+
+#skills .row .card:hover .text {
+  margin-top: 20px;
+  transition: all .2s ease;
+}
+
+#skills .row .card .text .head {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+#skills .row .card .text .head h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#skills .row .card .text .head .line {
+  background-color: #00abf0;
+  width: 1px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+#skills .row .card .text i {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#skills .row .card .text p {
+  border-top: 1px solid #00abf0;
+  margin-top: 55px;
+  padding-top: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  transition: all .2s ease;
+}
+
+#skills .row .card:hover .text p {
+  margin-top: 25px;
+  padding-top: 20px;
+  transition: all .2s ease;
+}
+
+/* FOOTER */
+.footer {
+  display:  flex;
+  width: 100%;
+  padding: 50px 200px;
+
+  background-color: #1e1e1e;
+
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.footer-contatos{
+  width: 50%;
+  display: flex;
+  
+  
+}
+.social-icons{
+  flex-direction: row;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-icons a{
+  display: flex;
+  background-color: #666;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+ 
+@media screen and (max-width: 768px) {
+  .home {
+    display: block;
+    background-image: none;
+  }
+  .img{
+    width: 50vw;
+    display: none;
+    
+  }
+
+  .footer{
+    margin: 2em 2em;
+  }
+  
+  .content{
+    margin: 0;
+    text-align: center;
+  }
+  .card{
+    display: block;
+  }
+}
+
+/* Estilos para telas menores que 768px */
+@media (max-width: 767px) {
+  /* Ajuste o tamanho da fonte do título principal */
+  .home .content h1 {
+    font-size: 30px;
+  }
+
+  /* Reduza o espaçamento entre os botões */
+  .btn-box a {
+    margin-top: 10px;
+  }
+
+  /* Ajuste o tamanho da fonte do rodapé */
+  .footer {
+    font-size: 12px;
+  }
+}
+
+/* Estilos para telas menores que 992px */
+@media (max-width: 991px) {
+  /* Ajuste o tamanho da fonte do subtítulo */
+  .home .content h2 {
+    font-size: 16px;
+  }
+
+  /* Ajuste o espaçamento entre os itens do menu */
+  .nav-header a {
+    margin-left: 20px;
+  }
+
+  /* Ajuste a largura dos botões de login e cadastro */
+  .buttons-header button {
+    max-width: 120px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Ajuste a largura dos cards */
+  .card {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+
