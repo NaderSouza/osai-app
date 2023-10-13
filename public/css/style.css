@@ -49,13 +49,14 @@ header .container {
 }
 
 header .container .img-logo-a {
-  max-width: 150px;
-  width: 100%;
+  /* max-width: 150px; */
+  width: 175px;
 }
 
 
 header .container .nav-header ul {
   list-style: none;
+  display: none;
 }
 
 header .container .nav-header ul li {
@@ -91,8 +92,6 @@ header .container {
 header .container button {
   max-width: 150px;
   padding: 15px;
-  
-
   position: relative;
   display: inline-flex;
   justify-content: center;
@@ -148,6 +147,8 @@ header .container button::before {
   justify-content: center;
   gap: 200px;
   padding: 50px 200px;
+  flex-wrap: wrap;
+
 }
 
 .home .content {
@@ -402,6 +403,8 @@ header .container button::before {
   display: flex;
   gap: 10px;
   margin-top: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-icons a{
@@ -417,78 +420,188 @@ header .container button::before {
   
 }
 
+.icons2 {
+  display: none;;
+}
+
 h3 {
   margin-top: 0;
   font-size: 20px;
   color: #fff;
 }
 
+.main-image{
+  /* width: 20px;
+  height: 20px; */
+}
+
 /* RESPONSIVE */
- 
-@media screen and (max-width: 768px) {
-  .home {
-    display: block;
-    background-image: none;
+
+
+@media (max-width: 1550px) {
+  header {
+    padding: 30px 100px;
   }
-  .img{
-    width: 50vw;
-    display: none;
-    
+}
+
+ 
+@media (max-width: 1350px) {
+  .home img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .home {
+    gap: 70px;
   }
 
-  .footer{
-    margin: 2em 2em;
+  #skills .row{
+    margin: 50 auto;
+    gap: 15px;
+    max-width: 1000px;
+  }
+
+}
+
+@media (max-width: 1050px) {
+
+  #skills .row{
+    max-width: 700px;
+  }
+
+}
+
+@media (max-width: 920px) {
+  header {
+    padding: 30px 40px;
   }
   
-  .content{
-    margin: 0;
-    text-align: center;
-  }
-  .card{
-    display: block;
-  }
-}
-
-/* Estilos para telas menores que 768px */
-@media (max-width: 767px) {
-  /* Ajuste o tamanho da fonte do título principal */
-  .home .content h1 {
-    font-size: 30px;
-  }
-
-  /* Reduza o espaçamento entre os botões */
-  .btn-box a {
-    margin-top: 10px;
-  }
-
-  /* Ajuste o tamanho da fonte do rodapé */
   .footer {
-    font-size: 12px;
+    padding: 50px 100px;
+    font-size: 14px;
   }
+  
 }
 
-/* Estilos para telas menores que 992px */
-@media (max-width: 991px) {
-  /* Ajuste o tamanho da fonte do subtítulo */
-  .home .content h2 {
-    font-size: 16px;
+@media (max-width: 710px){
+
+  .icons2 {
+    display: flex;
+  }
+  
+  .footer-social {
+    display: none;
   }
 
-  /* Ajuste o espaçamento entre os itens do menu */
-  .nav-header a {
-    margin-left: 20px;
+  .footer-content{
+    justify-content: center;
   }
 
-  /* Ajuste a largura dos botões de login e cadastro */
-  .buttons-header button {
-    max-width: 120px;
-    padding: 10px;
+  #skills .row{
+    flex-direction: column;
+    max-width: 400px;
+    gap: 35px;
+  }
+
+}
+
+@media (max-width: 555px) {
+
+  header .container .img-logo-a {
+    width: 150px;
+  }
+
+  header {
+    padding: 30px 40px;
+  }
+
+  header .container button {
+    max-width: 100px;
+    padding: 8px;
+    font-size: 15px;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+  }
+
+  .footer {
+    padding: 50px 50px;
     font-size: 14px;
   }
 
-  /* Ajuste a largura dos cards */
-  .card {
-    flex-basis: calc(50% - 20px);
+}
+
+@media (max-width: 460px){
+  header .container .img-logo-a {
+    width: 120px;
+  }
+
+  header {
+    padding: 25px 30px;
+  }
+
+  header .container button {
+    max-width: 80px;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #00abf0;
+    border-radius: 8px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  #skills .row{
+    max-width: 300px;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 400px){
+
+  header .container .img-logo-a {
+    width: 110px;
+  }
+
+  header {
+    padding: 25px 10px;
+  }
+
+  header .container button {
+    max-width: 80px;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #00abf0;
+    border-radius: 8px;
+  }
+
+  .home {
+    padding: 50px 150px;
+  }
+}
+
+@media (max-width: 325px){
+
+  header {
+    padding: 25px 7px;
+  }
+
+  header .container button {
+    max-width: 80px;
+    padding: 10px;
+    font-size: 10px;
+    border: 1px solid #00abf0;
+    border-radius: 8px;
+  }
+
+  .home {
+    padding: 50px 60px;
+  }
+
+  #skills .row{
+    max-width: 250px;
+    gap: 20px;
   }
 }
 
