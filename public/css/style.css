@@ -185,8 +185,8 @@ header .container button::before {
   font-weight: bold;
   font-family: 'Open Sans', sans-serif;
   margin-top: 10px;
-  opacity:  0.4;
-  color: rgba(255, 255, 255, 0.9);
+  /* opacity:  0.4; */
+  color: #0f5f96;
 }
 
 .home img {
