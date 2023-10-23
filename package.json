@@ -18,7 +18,6 @@
   "homepage": "https://github.com/arthurgoulart/henrique_map#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "sqlite": "^5.0.1",
     "sqlite3": "^5.1.6"
   }
 }

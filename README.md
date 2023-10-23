@@ -2,7 +2,7 @@
 Projeto que integra um aplicativo para usuários e um site para paramédicos, proporcionando um sistema eficiente de solicitação de ambulâncias e compartilhamento de informações médicas vitais em situações de emergência. Nossa missão é oferecer atendimento de emergência rápido, preciso e personalizado, garantindo a segurança e o cuidado dos pacientes enquanto facilitamos a comunicação entre pacientes, familiares e profissionais de saúde.
 
 ### **Website**
-https://osai-website.vercel.app/
+https://osai.com.br/
 
 # React Native app com serviços da AWS
 O aplicativo foi desenvolvido com React Native e integra serviços especializados em localização, além de outras funcionalidades oferecidas pela AWS.
@@ -11,15 +11,13 @@ O Aplicativo utiliza:
 
 - [Route 53](https://aws.amazon.com/route53/)
 - [CloudFront](https://aws.amazon.com/cloudfront/)
-- [Amplify](https://aws.amazon.com/amplify/)
 - [Cognito](https://aws.amazon.com/cognito/)
+- [AWS EC2](https://aws.amazon.com/ec2/)
 - [Amazon S3](https://aws.amazon.com/s3/)
+- [AWS RDS](https://aws.amazon.com/rds/)
+- [AWS Location Service](https://aws.amazon.com/location/)
 - [NAT Gateway](https://aws.amazon.com/vpc/features/nat-gateway/)
 - [Load Balancer](https://aws.amazon.com/elasticloadbalancing/)
-- [AWS ACM](https://aws.amazon.com/acm/)
-- [AWS RDS](https://aws.amazon.com/rds/)
-- [AWS ECS Cluster](https://aws.amazon.com/ecs/)
-- [AWS Location Service](https://aws.amazon.com/location/)
 
 <!-- O Aplicativo utiliza [AWS RDS](https://aws.amazon.com/rds/) to store all contact info and it uses [AWS SNS](https://aws.amazon.com/sns/) to send SMS notifications. -->
 
