@@ -28,6 +28,7 @@ O Aplicativo utiliza:
 
 ![Infra](img/infra.png)
 
+
 <!-- <br>
 
 ## Step-by-step
